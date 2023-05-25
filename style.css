@@ -45,20 +45,14 @@ button {
   border: 0;
   outline: none;
   border-radius: 25px;
-  background: #333;
+  background: #000;
   color: #fff;
-  font-size: 14px;
+  font-family: 'Bebas Neue', sans-serif;;
+  font-size: 20px;
   cursor: pointer;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.menu-icon {
-  width: 50px;
-  margin-left: 30px;
-  // border-radius: 50%;
-  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
 
 .row {
   display: flex;
@@ -85,11 +79,12 @@ button {
 }
 
 .col-1 h1 {
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 50px;
+  line-height: 90px;
   letter-spacing: 1px;
   color: blue;
   font-family: 'Bebas Neue', sans-serif;;
+  text-align: center;
 }
 
 .col-1 p {
@@ -98,88 +93,73 @@ button {
   margin: 15px 0px 30px;
 }
 
-ul {
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
   position: absolute;
-  bottom: 30px;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-ul li {
-  list-style: none;
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  background: #bfbfbf;
-  border-radius: 50%;
-  margin-right: 15px;
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
   cursor: pointer;
-}
-
-ul .active {
-  background: #333;
-}
-
-.zoom {
-  animation: zoom-out 0.5s linear 1;
-}
-
-@keyframes zoom-out {
-  0% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.testimonial-slider {
-  background-color: #0000ff;
-  padding: 3em 2em;
-}
-.testimonial-title {
-  color: #fff;
-}
-.testimonial-title h2 {
-  padding-left: 0.2em;
-}
-.card {
-  margin: 0 0.5em;
-  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  background-color: #111;
+  color: white;
+  padding: 15px 40px;
   border: none;
-  height: 100%;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #fff;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  top: 60%;
-  transform: translateY(-50%);
 }
 
-@media (min-width: 576px) {
-  .carousel-item {
-    margin-right: 0;
-    flex: 0 0 50%;
-    display: block;
-  }
-  .carousel-inner {
-    display: flex;
-  }
+.openbtn:hover {
+  background-color: #444;
 }
-@media (min-width: 768px) {
-  .carousel-inner {
-    padding: 1em;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    opacity: 1;
-    position: absolute;
-    left: 1em;
-    top: 90%;
-    transform: translateY(-50%);
-  }
-  .carousel-control-next {
-    left: 5em;
-  }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
 }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
