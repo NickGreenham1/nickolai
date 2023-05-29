@@ -40,6 +40,10 @@ nav {
   cursor: pointer;
 }
 
+.logosocial{
+  margin-left: 40 px;
+}
+
 button {
   padding: 15px 40px;
   border: 0;
@@ -74,7 +78,7 @@ button {
 }
 
 .col-2 img {
-  width: 100%;
+  width: 104%;
 }
 
 .col-1 {
@@ -96,6 +100,10 @@ button {
   color: #777;
   line-height: 22px;
   margin: 15px 0px 30px;
+}
+
+.col-2{
+  background-color: black;
 }
 
 .center {
@@ -158,7 +166,7 @@ button {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s; /* If you want a transition effect */
+  transition: margin-left .5s;
   padding: 20px;
 }
 
@@ -168,3 +176,10 @@ button {
   .sidebar a {font-size: 18px;}
 }
 
+.bluebutton{
+  background-color: blue;
+}
+
+.headlogo{
+  align-items: center;
+}
