@@ -166,6 +166,14 @@ margin-left: 55px%;
   background-color: #444;
 }
 
+.pages:hover {
+  background-color: #444;
+}
+
+.bluebutton:hover {
+  background-color: #444;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
@@ -183,12 +191,12 @@ margin-left: 55px%;
   margin-left: 180px;
 }
 
+
 .headlogo{
   margin-left: 34%;
 }
 
-body { 
-   opacity: 0;
-   transition: opacity .5s;
+.sponsors{
+  margin-left: 250px;
+  margin-top:20px;
 }
-

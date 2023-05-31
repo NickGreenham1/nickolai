@@ -3,7 +3,7 @@
 
 body{
 	font-family: 'Bebas Neue', sans-serif;
-  color: blue;
+  color: black;
   background-color: black;
 }
 
@@ -22,7 +22,16 @@ nav {
   color: blue;
 }
 
-body { 
-   opacity: 0;
-   transition: opacity .5s;
+.headlogo{
+  margin-left: 34%;
 }
+
+.cardbody{
+  background-color: black;
+}
+
+p{
+  font-family: 'Bebas Neue', sans-serif;
+  color: white;
+  background-color: black;
+  font-size: 20px;

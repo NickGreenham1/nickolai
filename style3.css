@@ -1,7 +1,36 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body{
   font-family: 'Bebas Neue', sans-serif;
   color: blue;
   background-color: black;
+}
 
+h2{
+  font-size: 60px;
+}
+
+nav {
+  width: 100%;
+  padding: 100px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  color: blue;
+}
+
+.headlogo{
+  margin-left: 34%;
+}
+
+.cardbody{
+  background-color: black;
+}
+
+.bluebutton{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
