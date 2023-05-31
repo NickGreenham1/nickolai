@@ -1,305 +1,239 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Festival Tickets</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEoVFa6Ew3pX6h2w9JwU9" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <title>FutureFest</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Festival Name</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+<div class="container">
+  <div class="py-5 text-center">
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:blue;">
+    <div class="container-fluid ">
+      <img src="logohq.png" width="450" height="130" class="text-center">
+    </div>
+  </nav>
+    <hr class="mb-4">
+    <h2>Buy Tickets</h2>
+    <a href="index.html"><button class="btn btn-primary btn-lg btn-block" type="submit">Back To Home</button></a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 order-md-2 mb-4">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted">Your cart</span>
+        <span class="badge badge-secondary badge-pill">3</span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0"> 1x Mosh Ticket</h6>
+          </div>
+          <span class="text-muted">$120</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">1x Silver Seating</h6>
+          </div>
+          <span class="text-muted">$150</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+          <div>
+            <h6 class="my-0">1x Gold Seating</h6>
+          </div>
+          <span class="text-muted">$220</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between bg-light">
+          <div class="text-success">
+            <h6 class="my-0">VIP Discount</h6>
+          </div>
+          <span class="text-success">$40</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (AUD)</span>
+          <strong>$450</strong>
+        </li>
+      </ul>
+
+      <form class="card p-2">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Promo code">
+          <div class="input-group-append">
+            <button type="submit" class="btn btn-secondary">Redeem</button>
+          </div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="row mt-5">
-            <div class="col-md-8 offset-md-2">
-                <div class="card">
-                    <div class="card-header">
-                        Festival Tickets
-                    </div>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="tickets">Number of Tickets</label>
-                                <input type="number" class="form-control" id="tickets" name="tickets" min="1" max="10" placeholder="Enter number of tickets">
-                            </div>
-                            <div class="form-group">
-                                <label for="payment">Payment Method</label>
-                                <select class="form-control" id="payment" name="payment">
-                                    <option value="credit-card">Credit Card</option>
-                                    <option value="debit-card">Debit Card</option>
-                                    <option value="paypal">PayPal</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Buy Tickets</
+      </form>
+    </div>
+    <div class="col-md-8 order-md-1">
+      <h4 class="mb-3">Billing address</h4>
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
 
-body {
-  padding-bottom: 30px;
-  position: relative;
-  min-height: 100%;
-}
+        <div class="mb-3">
+          <label for="username">Username</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="Username" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
 
-a {
-  transition: background 0.2s, color 0.2s;
-}
-a:hover,
-a:focus {
-  text-decoration: none;
-}
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          <div class="invalid-feedback">
+            Please enter a valid email address for shipping updates.
+          </div>
+        </div>
 
-#wrapper {
-  padding-left: 0;
-  transition: all 0.5s ease;
-  position: relative;
-}
+        <div class="mb-3">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
 
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 0;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background: #222;
-  transition: all 0.5s ease;
-}
+        <div class="mb-3">
+          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div>
 
-#wrapper.toggled #sidebar-wrapper {
-  width: 250px;
-}
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Country</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <option>Australia</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option value="">Choose...</option>
+              <option>South Australia</option>
+              <option>Melbourne</option>
+              <option>Sydney</option>
+              <option>ACT</option>
+              <option>Western Australia</option>
+              <option>Queensland</option>
+              <option>New South Wales</option>
+              <option>Northern Territory</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">Zip</label>
+            <input type="text" class="form-control" id="zip" placeholder="" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div>
+        <hr class="mb-4">
 
-.sidebar-brand {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  text-align: center;
-  padding: 20px 0;
-}
-.sidebar-brand h2 {
-  margin: 0;
-  font-weight: 600;
-  font-size: 24px;
-  color: #fff;
-}
+        <h4 class="mb-3">Payment</h4>
 
-.sidebar-nav {
-  position: absolute;
-  top: 75px;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.sidebar-nav > li {
-  text-indent: 10px;
-  line-height: 42px;
-}
-.sidebar-nav > li a {
-  display: block;
-  text-decoration: none;
-  color: #757575;
-  font-weight: 600;
-  font-size: 18px;
-}
-.sidebar-nav > li > a:hover,
-.sidebar-nav > li.active > a {
-  text-decoration: none;
-  color: #fff;
-  background: #F8BE12;
-}
-.sidebar-nav > li > a i.fa {
-  font-size: 24px;
-  width: 60px;
-}
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
 
-#navbar-wrapper {
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-}
-#wrapper.toggled #navbar-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-#navbar-wrapper .navbar {
-  border-width: 0 0 0 0;
-  background-color: #eee;
-  font-size: 24px;
-  margin-bottom: 0;
-  border-radius: 0;
-}
-#navbar-wrapper .navbar a {
-  color: #757575;
-}
-#navbar-wrapper .navbar a:hover {
-  color: #F8BE12;
-}
-
-#content-wrapper {
-  width: 100%;
-  position: absolute;
-  padding: 15px;
-  top: 100px;
-}
-#wrapper.toggled #content-wrapper {
-  position: absolute;
-  margin-right: -250px;
-}
-
-@media (min-width: 992px) {
-  #wrapper {
-    padding-left: 250px;
-  }
-  
-  #wrapper.toggled {
-    padding-left: 60px;
-  }
-
-  #sidebar-wrapper {
-    width: 250px;
-  }
-  
-  #wrapper.toggled #sidebar-wrapper {
-    width: 60px;
-  }
-  
-  #wrapper.toggled #navbar-wrapper {
-    position: absolute;
-    margin-right: -190px;
-}
-  
-  #wrapper.toggled #content-wrapper {
-    position: absolute;
-    margin-right: -190px;
-  }
-
-  #navbar-wrapper {
-    position: relative;
-  }
-
-  #wrapper.toggled {
-    padding-left: 60px;
-  }
-
-  #content-wrapper {
-    position: relative;
-    top: 0;
-  }
-
-  #wrapper.toggled #navbar-wrapper,
-  #wrapper.toggled #content-wrapper {
-    position: relative;
-    margin-right: 60px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  #wrapper {
-    padding-left: 60px;
-  }
-
-  #sidebar-wrapper {
-    width: 60px;
-  }
-  
-#wrapper.toggled #navbar-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-  
-  #wrapper.toggled #content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-  }
-
-  #navbar-wrapper {
-    position: relative;
-  }
-
-  #wrapper.toggled {
-    padding-left: 250px;
-  }
-
-  #content-wrapper {
-    position: relative;
-    top: 0;
-  }
-
-  #wrapper.toggled #navbar-wrapper,
-  #wrapper.toggled #content-wrapper {
-    position: relative;
-    margin-right: 250px;
-  }
-}
-
-@media (max-width: 767px) {
-  #wrapper {
-    padding-left: 0;
-  }
-
-  #sidebar-wrapper {
-    width: 0;
-  }
-
-  #wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-  }
-  #wrapper.toggled #navbar-wrapper {
-    position: absolute;
-    margin-right: -250px;
-  }
-
-  #wrapper.toggled #content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-  }
-
-  #navbar-wrapper {
-    position: relative;
-  }
-
-  #wrapper.toggled {
-    padding-left: 250px;
-  }
-
-  #content-wrapper {
-    position: relative;
-    top: 0;
-  }
-
-  #wrapper.toggled #navbar-wrapper,
-  #wrapper.toggled #content-wrapper {
-    position: relative;
-    margin-right: 250px;
-  }
-}s
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 FutureFest</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
